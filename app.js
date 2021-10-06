@@ -1,19 +1,26 @@
 //Importando o Express na Sintaxe CommonJS
 const express = require("express");
+<<<<<<< HEAD
 const path = require("path");
+=======
+>>>>>>> 30276bfb75269f46c416fafa35a047347761db74
 
 //Instanciando o Express para criar um aplicativo
 const app = express();
 
+<<<<<<< HEAD
 //Importando a array de objetos que simula o banco de dados
 const productsArray = require("./data");
 
+=======
+>>>>>>> 30276bfb75269f46c416fafa35a047347761db74
 //Criando uma rota do verbo GET com uma frase teste para ver se a requisição foi recebida e, retornando uma mensagem de boas vindas.
 app.get("/hello", (request, response) => {
   console.log("A rota /hello foi chamada para teste");
   return response.send("Seja bem vindo!");
 });
 
+<<<<<<< HEAD
 //Pesquisando um elemento na array
 app.get("/products/search", (request, response) => {
   const queryParams = request.query;
@@ -42,6 +49,8 @@ app.get("/products/:id", (request, response) => {
   }
 });
 
+=======
+>>>>>>> 30276bfb75269f46c416fafa35a047347761db74
 //Escutando requisições HTTP na porta 4000
 app.listen(4000, () => {
   console.log("Servidor está no ar, escutando requisições na porta 4000!");
